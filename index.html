@@ -53,16 +53,6 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/1">0</a></li>
-	        
-				<li><a href="/%20">1</a></li>
-	        
-				<li><a href="/2">2</a></li>
-	        
-				<li><a href="/%20">3</a></li>
-	        
-				<li><a href="/3">4</a></li>
-	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -107,16 +97,6 @@
 			
 			
 			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -130,19 +110,9 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 20%"><a href="/1">0</a></li>
-		        
-					<li style="width: 20%"><a href="/%20">1</a></li>
-		        
-					<li style="width: 20%"><a href="/2">2</a></li>
-		        
-					<li style="width: 20%"><a href="/%20">3</a></li>
-		        
-					<li style="width: 20%"><a href="/3">4</a></li>
-		        
 				</ul>
 			</nav>
 		</header>				
@@ -186,28 +156,10 @@
 <p><strong>ssh-keygen -t rsa -b 2048</strong> </p>
 </blockquote>
 <p>Once this command is executed, you will be prompted to specify where and what name you would like to store the keys. You will also be provided with a default <strong>~&#x2F;.ssh&#x2F;id_rsa</strong>. Next, you will be prompted to optionally choose a passphrase for the keys.</p>
-<h2 id="2-Add-Key-Pairs"><a href="#2-Add-Key-Pairs" class="headerlink" title="2. Add Key Pairs"></a>2. Add Key Pairs</h2><p>Now start the SSH agent with command </p>
-<blockquote>
-<p><strong>eval “$(ssh-agent -s)”</strong></p>
-</blockquote>
-<p>You will see an agent process id if the agent is successfully started. </p>
-<p>Here comes the critical step for using multiple keys for different GitHub accounts. Create and edit <strong>~&#x2F;.ssh&#x2F;config</strong> file. Add the following configurations:</p>
-<pre>
-Host *.github.com-user.name1
-    AddKeysToAgent yes
-    IdentityFile ~/.ssh/id_rsa1
-Host *.github.com-user.name2
-    AddKeysToAgent yes
-    IdentityFile ~/.ssh/id_rsa2
-</pre>
-
-<p>Use the command </p>
-<blockquote>
-<p><strong>ssh-add ~&#x2F;.ssh&#x2F;id_rsa1</strong><br><strong>ssh-add ~&#x2F;.ssh&#x2F;id_rsa2</strong></p>
-</blockquote>
-<p>to save your keys on the SSH agent.</p>
-<h2 id="3-Copy-Public-Keys-to-GitHub"><a href="#3-Copy-Public-Keys-to-GitHub" class="headerlink" title="3. Copy Public Keys to GitHub"></a>3. Copy Public Keys to GitHub</h2><p>Finally, copy the <strong>public</strong> keys, which are ~&#x2F;.ssh&#x2F;id_rsa1.pub and ~&#x2F;.ssh&#x2F;id_rsa2.pub, to GitHub. Then your git is ready to use.</p>
-
+<h2 id="2-Add-Key-Pairs"><a href="#2-Add-Key-Pairs" class="headerlink" title="2. Add Key Pairs"></a>2. Add Key Pairs</h2>
+        
+          <a class="article-more-a" href="/2023/02/04/Multiple-SSH-Keys/#more">more >></a>
+        
       
 
       
