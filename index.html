@@ -141,8 +141,12 @@
 <h2 id="2-Generalization"><a href="#2-Generalization" class="headerlink" title="2. Generalization"></a>2. Generalization</h2><p>Now we work on the general problem of finding the probability of having $n$ consecutive heads after $M$ tosses. There are a total of $n+1$ states in the process of tossing M coins. These $n+1$ states are having $0, 1, 2, …, n$ heads.</p>
 <ol>
 <li>When we are in State $s$, where $s$ is an integer in the interval $[0, n-1]$, the probability of returning to State 0 is $\frac{1}{2}$ and the probability of entering State $i+1$ is also $\frac{1}{2}$.</li>
-<li>When we are in State $n$, then we will remain in State $n$.<br>Therefore, we can define an $(n+1)\times(n+1)$ matrix $T$ where the $i$th row and the $j$th column is the probability of transitioning from State $i$ to State $j$.<br>$<br>\left(\begin{array}{cc}<br>0.5 &amp; 0.5 &amp; 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0\<br>0.5 &amp; 0 &amp; 0.5 &amp; 0 &amp; 0 &amp; \cdots &amp; 0\<br>0.5 &amp; 0 &amp; 0 &amp; 0.5 &amp; 0 &amp; \cdots &amp; 0\<br>\vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \cdots &amp; 0\<br>0.5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0.5\<br>0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 1<br>\end{array}\right)<br>$<br>Because initially we are in State 0, our status vector $V$ is an $n \times 1$ matrix<br>$<br>(1, 0, 0, 0, \cdots, 0)^t<br>$<br>Therefore, the probabilities of being in each state after $M$ tosses is $T^M V$.</li>
+<li>When we are in State $n$, then we will remain in State $n$.<br>Therefore, we can define an $(n+1)\times(n+1)$ matrix $T$ where the $i$th row and the $j$th column is the probability of transitioning from State $i$ to State $j$.<blockquote>
+<p>$$<br>\left(\begin{matrix}<br>0.5 &amp; 0.5 &amp; 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0\\<br>0.5 &amp; 0 &amp; 0.5 &amp; 0 &amp; 0 &amp; \cdots &amp; 0\\<br>0.5 &amp; 0 &amp; 0 &amp; 0.5 &amp; 0 &amp; \cdots &amp; 0\\<br>\vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \cdots &amp; 0\\<br>0.5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0.5\\<br>0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 1<br>\end{matrix}\right)<br>$$</p>
+</blockquote>
+</li>
 </ol>
+<p>Because initially we are in State 0, our status vector $V$ is an $n \times 1$ matrix<br>$<br>(1, 0, 0, 0, \cdots, 0)^t<br>$<br>Therefore, the probabilities of being in each state after $M$ tosses is $T^M V$.</p>
 
       
 
