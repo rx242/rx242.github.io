@@ -6,20 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Multiple-SSH-Keys | Fin &amp; Tech</title>
+  <title>n Heads In A Row | Fin &amp; Tech</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Set Up GitHub Authentication With Multiple SSH Keys1. Generate Public-Private Key PairsThe SSH command is ssh-keygen.  With option -t, we can specify which type of keys we would like to generate. Comm">
+  <meta name="description" content="Toss M Coins. What Is The Probability There Are n Heads In A Row?A Simpler ExampleWhen we face a problem that is complex and overwhelming, a useful strategy is to consider an edge case to find inspira">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Multiple-SSH-Keys">
-<meta property="og:url" content="http://yoursite.com/2023/02/04/Multiple-SSH-Keys/index.html">
+<meta property="og:title" content="n Heads In A Row">
+<meta property="og:url" content="http://yoursite.com/2023/02/09/n-Heads-In-A-Row/index.html">
 <meta property="og:site_name" content="Fin &amp; Tech">
-<meta property="og:description" content="Set Up GitHub Authentication With Multiple SSH Keys1. Generate Public-Private Key PairsThe SSH command is ssh-keygen.  With option -t, we can specify which type of keys we would like to generate. Comm">
+<meta property="og:description" content="Toss M Coins. What Is The Probability There Are n Heads In A Row?A Simpler ExampleWhen we face a problem that is complex and overwhelming, a useful strategy is to consider an edge case to find inspira">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-02-04T19:00:00.000Z">
-<meta property="article:modified_time" content="2023-02-04T20:13:44.708Z">
+<meta property="article:published_time" content="2023-02-09T14:35:07.000Z">
+<meta property="article:modified_time" content="2023-02-09T16:25:26.603Z">
 <meta property="article:author" content="Ruida Xie">
-<meta property="article:tag" content="GitHub">
-<meta property="article:tag" content="SSH">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Fin &amp; Tech" type="application/atom+xml">
@@ -132,57 +130,46 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Multiple-SSH-Keys" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-n-Heads-In-A-Row" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Multiple-SSH-Keys
+      n Heads In A Row
     </h1>
   
 
         
-        <a href="/2023/02/04/Multiple-SSH-Keys/" class="archive-article-date">
-  	<time datetime="2023-02-04T19:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>02-04-2023</time>
+        <a href="/2023/02/09/n-Heads-In-A-Row/" class="archive-article-date">
+  	<time datetime="2023-02-09T14:35:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>02-09-2023</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Set-Up-GitHub-Authentication-With-Multiple-SSH-Keys"><a href="#Set-Up-GitHub-Authentication-With-Multiple-SSH-Keys" class="headerlink" title="Set Up GitHub Authentication With Multiple SSH Keys"></a>Set Up GitHub Authentication With Multiple SSH Keys</h1><h2 id="1-Generate-Public-Private-Key-Pairs"><a href="#1-Generate-Public-Private-Key-Pairs" class="headerlink" title="1. Generate Public-Private Key Pairs"></a>1. Generate Public-Private Key Pairs</h2><p>The SSH command is <strong>ssh-keygen</strong>. </p>
-<p>With option <strong>-t</strong>, we can specify which type of keys we would like to generate. Commonly used key types include <strong>rsa</strong> and <strong>ed25519</strong>. If no type is specified, <strong>rsa</strong> would be the default option. </p>
-<p>With option <strong>-b</strong>, we can specify the size of keys in bits.</p>
-<p>A sample command would be </p>
-<blockquote>
-<p><strong>ssh-keygen -t rsa -b 2048</strong> </p>
-</blockquote>
-<p>Once this command is executed, you will be prompted to specify where and what name you would like to store the keys. You will also be provided with a default <strong>~&#x2F;.ssh&#x2F;id_rsa</strong>. Next, you will be prompted to optionally choose a passphrase for the keys.</p>
-<h2 id="2-Add-Key-Pairs"><a href="#2-Add-Key-Pairs" class="headerlink" title="2. Add Key Pairs"></a>2. Add Key Pairs</h2><span id="more"></span>
+        <h1 id="Toss-M-Coins-What-Is-The-Probability-There-Are-n-Heads-In-A-Row"><a href="#Toss-M-Coins-What-Is-The-Probability-There-Are-n-Heads-In-A-Row" class="headerlink" title="Toss M Coins. What Is The Probability There Are n Heads In A Row?"></a>Toss M Coins. What Is The Probability There Are n Heads In A Row?</h1><h2 id="A-Simpler-Example"><a href="#A-Simpler-Example" class="headerlink" title="A Simpler Example"></a>A Simpler Example</h2><p>When we face a problem that is complex and overwhelming, a useful strategy is to consider an edge case to find inspiration. Let’s consider the problem “Toss 3 coins. What is the probability there is at least one heads?” In the process of tossing 3 coins, there are two possible states: “having no heads yet (State 0)” and “already had a heads (State 1)”</p>
+<ol>
+<li><p>Initially we are in State 0. When we toss the first coin, there is 50% chance we will get a heads and enter State 1. There is also 50% chance we will remain in State 0. </p>
+</li>
+<li><p>If we ever enter State 1, then whatever the next tosses are, we will always remain in State 1.</p>
+</li>
+</ol>
+<p>The answer becomes straightforward: $\frac{1}{2} + (\frac{1}{2})^2 + (\frac{1}{2})^3 &#x3D; \frac{7}{8}$, which is easily verifiable because it is 1 minus the probability of getting all tails.</p>
+<h2 id="Generalization"><a href="#Generalization" class="headerlink" title="Generalization"></a>Generalization</h2><span id="more"></span>
 
-<p>Now start the SSH agent with command </p>
-<blockquote>
-<p><strong>eval “$(ssh-agent -s)”</strong></p>
-</blockquote>
-<p>You will see an agent process id if the agent is successfully started. </p>
-<p>Here comes the critical step for using multiple keys for different GitHub accounts. Create and edit <strong>~&#x2F;.ssh&#x2F;config</strong> file. Add the following configurations:</p>
-<pre>
-Host *.github.com-user.name1
-    AddKeysToAgent yes
-    IdentityFile ~/.ssh/id_rsa1
-Host *.github.com-user.name2
-    AddKeysToAgent yes
-    IdentityFile ~/.ssh/id_rsa2
-</pre>
-
-<p>Use the command </p>
-<blockquote>
-<p><strong>ssh-add ~&#x2F;.ssh&#x2F;id_rsa1</strong><br><strong>ssh-add ~&#x2F;.ssh&#x2F;id_rsa2</strong></p>
-</blockquote>
-<p>to save your keys on the SSH agent.</p>
-<h2 id="3-Copy-Public-Keys-to-GitHub"><a href="#3-Copy-Public-Keys-to-GitHub" class="headerlink" title="3. Copy Public Keys to GitHub"></a>3. Copy Public Keys to GitHub</h2><p>Finally, copy the <strong>public</strong> keys, which are ~&#x2F;.ssh&#x2F;id_rsa1.pub and ~&#x2F;.ssh&#x2F;id_rsa2.pub, to GitHub. Then your git is ready to use.</p>
+<p>Now we work on the general problem of finding the probability of having $n$ consecutive heads after $M$ tosses. There are a total of $n+1$ states in the process of tossing M coins. These $n+1$ states are having $0, 1, 2, …, n$ heads.</p>
+<ol>
+<li><p>When we are in State $s$, where $s$ is an integer in the interval $[0, n-1]$, the probability of returning to State 0 is $\frac{1}{2}$ and the probability of entering State $i+1$ is also $\frac{1}{2}$.</p>
+</li>
+<li><p>When we are in State $n$, then we will remain in State $n$.</p>
+</li>
+</ol>
+<p>Therefore, we can define an $(n+1)\times(n+1)$ matrix $T$ where the $i$th row and the $j$th column is the probability of transitioning from State $i$ to State $j$.</p>
+<p>$$<br>\left(\begin{array}{cc}<br>0.5 &amp; 0.5 &amp; 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0\<br>0.5 &amp; 0 &amp; 0.5 &amp; 0 &amp; 0 &amp; \cdots &amp; 0\<br>0.5 &amp; 0 &amp; 0 &amp; 0.5 &amp; 0 &amp; \cdots &amp; 0\<br>\vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \cdots &amp; 0\<br>0.5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0.5\<br>0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 1<br>\end{array}\right)<br>$$ </p>
+<p>Because initially we are in State 0, our status vector $V$ is an $n \times 1$ matrix<br>$<br>(1, 0, 0, 0, \cdots, 0)^t<br>$<br>Therefore, the probabilities of being in each state after $M$ tosses is $T^M V$. </p>
 
       
 
@@ -217,21 +204,6 @@ Host *.github.com-user.name2
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">GitHub</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">SSH</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -245,18 +217,9 @@ Host *.github.com-user.name2
   
 <nav id="article-nav">
   
-    <a href="/2023/02/09/n-Heads-In-A-Row/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          n Heads In A Row
-        
-      </div>
-    </a>
   
-  
-    <a href="/2023/02/03/Introduction/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Introduction</div>
+    <a href="/2023/02/04/Multiple-SSH-Keys/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Multiple-SSH-Keys</div>
       <i class="icon-circle-right"></i>
     </a>
   
